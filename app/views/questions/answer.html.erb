@@ -1,4 +1,20 @@
-<h1>Stupid coach</h1>
-<p>You asked: <%= @question %></p>
-<p>Coach answered: <%= @answer %></p>
+<h1>Stupid coaching</h1>
+<div class="qa-container">
+  <div class="question">
+    <p><%= @question %></p>
+  </div>
+  <div class="author">
+    <p class="italic">- You</p>
+  </div>
+</div>
+<div class="qa-container answer">
+  <div class="answer">
+    <p><%= @answer %></p>
+  </div>
+  <div class="author">
+    <p class="italic">- Your coach</p>
+  </div>
+
+</div>
+
 <%= link_to 'Ask another question', ask_path %>
